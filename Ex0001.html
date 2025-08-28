@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML du Corte</title>
+    <link rel="shortcut icon" href="Imagens/Ícone barbearia.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root{
+        --primary:#1a1a1a;
+        --secondary:#d4af37;
+        --accent:#8b0000;
+        --light:#333;
+      }
+      body{
+        font-family:'Roboto', sans-serif;
+        background-color: var(--light);
+        color: var(--primary);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4{
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .btn{
+        display: inline-block;
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 12px 25px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+    </style>
+        
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-cut"></i>
+                <h1>ML <span>du Corte</span></h1>
+            </div>
+
+            <!--Navegação-->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="mobile-menu" id="mobilemenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero Section-->
+     <section class="hero" id="home">
+      <div class="container hero-container">
+        <h2>Estilo, tradição e modernidade</h2>
+        <p>
+          Na ML du Corte, combinamos tradição e modernidade para oferecer a
+          melhor experiencia em cuidado masculino
+        </p>
+        <a href="#contact" class="btn">Agendar Horário</a>
+      </div>
+    </section>
+
+    <!--Sobre-->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sobre Nós</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>5 anos de excelência em Barbearia</h3>
+            <p>
+              Fundada em 2020, a ML du Corte nasceu da paixão por corte de
+              cabelos e barbas impecáveis. Nossa missão é proporcionar uma
+              experiência onde a tradição e a modernidade se encontram.
+            </p>
+            <p>
+              Nossos barbeiros são altamente qualificados e constantemente
+              treinados nas últimas tendências e técnicas.
+            </p>
+            <p>
+              No coração da cidade, nosso espaço foi cuidadosamente projetado
+              para oferecer conforto e estilo, criando o ambiente perfeito para
+              relaxar enquanto cuidamos da sua aparência.
+            </p>
+            <a href="#services" class="btn">Nossos Serviços</a>
+          </div>
+          <div class="about-image">
+          <img src="Imagens/photo-1 interior barbearia.avif" alt="Interior da nossa barbearia">
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!--Serviços-->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nossos Serviços</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-scissors"></i>
+            </div>
+            <h3>Corte de Babelo</h3>
+            <p>
+              Corte profissional com técnicas modernas e acabamento perfeito.
+            </p>
+            <div class="price">R$ 27</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-air-freshener"></i>
+            </div>
+            <h3>Barba Completa</h3>
+            <p>Loren ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="price">R$ 33</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-user"></i>
+            </div>
+          </div>
+          <div class="service-card">
+            <h3>Corte + Barba</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price">R$ 50</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-spa"></i>
+            </div>
+            <h3>Tratamento Capilar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price">R$ 60</div>
+            <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-br"></i>
+            </div>
+            </div>
+            <h3>Coloração</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price">R$ 80</div>
+            <div class="service-card">
+              <div class="classservice-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+            </div>
+            <h3>Pacote Premium</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit./p>
+             <div class="price">R$ 120</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="gallerry">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nossa Galeria</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="Imagens/photo- 2 corte de cabelo.jpeg" alt="Corte de Cabelo">
+          </div>
+          <div class="gallery-item">
+            <img src="Imagens/photo-3 fazendo a barba.jpeg" alt="Fazendo a Barba">
+          </div>
+          <div class="gallery-item">
+            <img src="Imagens/photo- 4 Barbeiro e cliente.jpeg" alt="Interior Barbeiro e cliente">
+          </div>
+          <div class="gallery-item">
+            <img src="Imagens/photo-5 produtos.avif" alt="Produtos">
+          </div>
+          <div class="gallery-item">
+            <img src="Imagens/photo-6 detalhes.jpeg" alt="Detalhe na barba">
+          </div>
+          <div class="gallery-item">
+            <img src="Imagens/photo-7 detalhe barba.jpeg" alt="Detalhe barba">
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Contato -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Entre em Contato</h3>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Endereço</h4>
+            <p>Av. Paulista, 1000<br>São Paulo, SP</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Telefone</h4>
+            <p>(11) 9999-8888</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Email</h4>
+            <p>contato@classicbarber.com.br</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Horário de Funcionamento</h4>
+            <p>Seg-Sex: 9:00 - 19:00<br>Sáb: 9:00 - 17:00<br>Dom: Fechado</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Agende um Horário</h3>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Seu Nome" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Seu Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Seu Telefone" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Serviço Desejado" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar Agendamento</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="logo">
+        <i class="fas fa-cut"></i>
+        <h1>ML du Corte <span>Barbearia</span></h1>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/1EszAugSMM/"> <i class="fab fa-facebook-f"></i>Facebook</a>
+        <a href="https://www.instagram.com/o_mldocorte?igsh=MWt0cjJydG5uM2c1OA=="> <i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://wa.me/+55"> <i class="fab fa-whatspp"></i>Whatsapp</a>
+        <a href="#"> <i class="fab fa-twitter"></i>X</a>
+      </div> 
+       </div>
+       <div class="copyright">
+        &copy;2025 ML du Corte. Todos os direitos reservados.
+       </div>
+    </div>
+</footer>
+</body>
+</html
